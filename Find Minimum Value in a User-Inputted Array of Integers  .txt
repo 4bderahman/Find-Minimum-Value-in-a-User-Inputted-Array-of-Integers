@@ -1,0 +1,28 @@
+ALGORITHME Minimum
+
+VARIABLES 
+    Tableau T(10) : Entier
+    i : Entier
+    min : Entier
+
+DEBUT
+
+   
+    ECRIRE ("Entrez le premier entier : ")
+    LIRE (T(0))
+    min <-- T(0)
+
+    POUR i <-- 1 à 9 pas 1 FAIRE
+        ECRIRE ("Entrez l'entier pour la position ", i+1, " : ")
+        LIRE (T(i))
+
+        SI T(i) < min ALORS
+            min <-- T(i)
+
+        FIN SI
+    FIN POUR
+
+    
+    ECRIRE ("Le minimum des éléments du tableau est : ", min)
+
+FIN
